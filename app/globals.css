@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #201747;
+  --navy-light: #3a2f6b;
+  --signal: #d3451e;
+  --sand: #f1dab2;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--navy);
+    color: #ffffff;
+  }
+  body {
+    font-family: var(--font-titillium), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  ::selection {
+    background-color: var(--signal);
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  .label-caps {
+    font-size: 0.75rem;
+    line-height: 1;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .signature-line {
+    display: inline-block;
+    width: 56px;
+    height: 2px;
+    background-color: var(--signal);
+  }
+  .ticket-clip {
+    clip-path: polygon(
+      0 12px, 10px 12px, 10px 0,
+      calc(100% - 10px) 0, calc(100% - 10px) 12px, 100% 12px,
+      100% calc(100% - 12px), calc(100% - 10px) calc(100% - 12px),
+      calc(100% - 10px) 100%, 10px 100%, 10px calc(100% - 12px), 0 calc(100% - 12px)
+    );
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
