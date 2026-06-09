@@ -6,6 +6,7 @@ export const EVENT = {
   dateLong: "04 & 05 de julho de 2026",
   dateShort: "04 & 05 JUL 2026",
   seats: 50,
+  lotStatus: "1º lote · 90% preenchido",
   durationDays: 2,
   instagram: "@diegoknebel_",
 } as const;

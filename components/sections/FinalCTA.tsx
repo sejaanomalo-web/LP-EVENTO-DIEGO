@@ -17,7 +17,7 @@ export function FinalCTA() {
 
             <div className="relative flex flex-col items-center gap-8">
               <span className="inline-flex items-center gap-2 rounded-full border border-signal/60 bg-navy/40 px-4 py-1.5 label-caps text-signal">
-                <span aria-hidden>✱</span> Atenção
+                <span aria-hidden>✱</span> {EVENT.lotStatus}
               </span>
 
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[1] text-balance max-w-3xl">

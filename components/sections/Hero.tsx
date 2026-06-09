@@ -29,7 +29,7 @@ export function Hero() {
       <div className="relative w-full border-y border-sand/15 bg-navy/40 backdrop-blur-sm">
         <div className="mx-auto max-w-screen-xl px-5 md:px-10 py-2.5 text-center">
           <span className="label-caps text-sand/90">
-            Inscrições por contato direto · ✱ vagas limitadas a {EVENT.seats} líderes
+            Inscrições por contato direto · ✱ {EVENT.lotStatus} · {EVENT.seats} vagas
           </span>
         </div>
       </div>
